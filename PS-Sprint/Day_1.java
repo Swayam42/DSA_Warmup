@@ -27,11 +27,20 @@ public class Day_1 {
                 return true;
             else return false;
             }
+
+   /*Validating Leap Years
+    Difficulty: Easy 
+    Leap_Year : divisible by 4 but not by 100 OR divisible by 400*/
+    static boolean leapYr(int x){
+            if(x%400==0||(x%4==0&&x%100!=0))
+                return true;
+            else return false;
+    }
         
     public static void main(String[] args) {
-    //EvenOdd(0);
+     //EvenOdd(0);
     //System.out.println(prime(8));
-
+    //System.out.println(leapYr(2020));
 
    }
 }
