@@ -45,13 +45,22 @@ public class Day4 {
             }
         }
     }
+
+    static int sum(int arr[]){
+         int sum=0;
+
+         for(int i=0;i<arr.length;i++){
+            sum+=arr[i];
+         }
+         return sum;
+    }
     
     public static void main(String[] args) {
        // reverse("programming");
        int arr[]={-3,5,23,0,-99};
        //max_min(arr);
-       sort(arr);
-       System.out.println(Arrays.toString(arr));
-
+       //sort(arr);
+       //System.out.println(Arrays.toString(arr));
+        System.out.println(sum(arr));
     }
 }
