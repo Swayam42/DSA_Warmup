@@ -71,6 +71,16 @@ public class Day10 {
 
    }
 
+   static void sqMatrix(int size){
+    int a=1;
+    for(int i=1;i<=size;i++){
+        for(int j=1;j<=size;j++){
+            System.out.print(a+" ");
+            a++;
+        }System.out.println();
+    }
+   }
+
    
 
     public static void main(String[] args) {
@@ -85,5 +95,6 @@ public class Day10 {
        // System.out.println(perfectSq(81));
 
        //System.out.println(sumSqDigits(123));
+       sqMatrix(3);
     }
 }
